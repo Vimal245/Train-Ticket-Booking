@@ -1,0 +1,94 @@
+body {
+    background-image: url("https://images.pling.com/img/00/00/59/57/30/1580462/8d573a797be2c1fb7451b58c0ce25dd0c43491df05fac0e1c78c9bdb9bde6d99ed3b.jpg");
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .topnav a {
+      float: right;
+    color: #4caf50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav1 {
+    float: left;
+    color: #4caf50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #0f6f12;
+    color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+    background-color:#4caf50;
+    color: white;
+}
+  
+
+
+.hello {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 120px;
+    background-color: #ffffff;
+  }
+  
+  .top {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .top h3 {
+      color: #4caf50;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label,h6 {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  input,
+  select {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0f6f12;
+  }
