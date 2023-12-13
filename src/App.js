@@ -1,4 +1,4 @@
-// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Login from './component/Login';
 import Signup from './component/Signup';
@@ -6,8 +6,12 @@ import Signup from './component/Signup';
 const App=()=> {
   return (
     <div>
-      <Login></Login>
-      <Signup></Signup>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Signup />} ></Route>
+        <Route path="/Signup" element={<Login />} ></Route>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

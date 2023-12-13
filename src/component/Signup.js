@@ -1,5 +1,8 @@
 import React from 'react';
 import './Signup.css';
+import { Link } from 'react-router-dom';
+
+
 function Signup()
 {
     return(
@@ -25,10 +28,14 @@ function Signup()
     <form class="form" >
       <label For="email">Email: </label>
       <input type="email" id="email" name="email" required />
-      <label For="password">Password: </label>
-      <input type="password" id="password" name="password" required />
 
-      <h6>Already have an Account? <a href="#">Signup</a></h6>
+      <label For="password">Password: </label>
+      <input type="password" id="password" required />
+
+      <label For="confirmpassword">Confirm Password: </label>
+      <input type="password" id="confirm_password" required />
+
+      <h6>Don't have an Account? <Link to="/Signup">Signup</Link></h6>
       <button type="submit">Submit Form</button><br />
     </form>
   </div>

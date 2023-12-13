@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css';
 function Login()
 {
@@ -34,7 +35,7 @@ function Login()
 
       <label For="email">Email: </label>
       <input type="email" id="email" name="email" required />
-      <centre><h6>Don't have an Account? <a href="#">Login</a></h6></centre>
+      <centre><h6>Already have an Account? <Link to="/">Login</Link></h6></centre>
       <button type="submit">Submit Form</button><br />
     </form>
   </div>
