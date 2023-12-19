@@ -36,7 +36,7 @@ function Signup()
       <input type="password" id="confirm_password" required />
 
       <h6>Don't have an Account? <Link to="/Signup">Signup</Link></h6>
-      <button type="submit">Submit Form</button><br />
+      <button type="submit"><Link to="/Home" style={{textDecoration: 'none', color:'white'}}>Submit Form</Link></button><br />
     </form>
   </div>
   </div>

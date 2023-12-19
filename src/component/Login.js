@@ -36,7 +36,7 @@ function Login()
       <label For="email">Email: </label>
       <input type="email" id="email" name="email" required />
       <centre><h6>Already have an Account? <Link to="/">Login</Link></h6></centre>
-      <button type="submit">Submit Form</button><br />
+      <button type="submit"><Link to="/Home" style={{textDecoration: 'none', color:'white'}}>Submit Form</Link></button><br />
     </form>
   </div>
         </div>
