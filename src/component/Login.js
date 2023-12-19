@@ -1,8 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/Login.css';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
+
 function Login()
 {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
     return(
         <div>
             <div class="topnav">
@@ -36,7 +56,12 @@ function Login()
       <label For="email">Email: </label>
       <input type="email" id="email" name="email" required />
       <centre><h6>Already have an Account? <Link to="/">Login</Link></h6></centre>
-      <button type="submit"><Link to="/Home" style={{textDecoration: 'none', color:'white'}}>Submit Form</Link></button><br />
+      <button type="submit"><Link to="/Home" onClick={handleClick} style={{textDecoration: 'none', color:'white'}}>Submit Form</Link></button><br />
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+          Signed up successfully!
+        </Alert>
+      </Snackbar>
     </form>
   </div>
         </div>
