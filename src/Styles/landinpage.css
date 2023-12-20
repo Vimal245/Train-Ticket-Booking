@@ -1,0 +1,46 @@
+.landnav {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .landnav a {
+      float: right;
+    color: #4caf50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .landnav1 {
+    float: left;
+    color: #4caf50;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .landnav a:hover {
+    background-color: #0f6f12;
+    color: rgb(255, 255, 255);
+  }
+  
+  .landnav a.active {
+    background-color:#4caf50;
+    color: white;
+  }
+
+  .headd {
+    color: #ffffff;
+    margin-top: 200px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .putton {
+    margin-left: 670px;
+  }
+
+  .tr {
+    margin-left: 400px;
+  }

@@ -55,7 +55,7 @@ function Login()
 
       <label For="email">Email: </label>
       <input type="email" id="email" name="email" required />
-      <centre><h6>Already have an Account? <Link to="/">Login</Link></h6></centre>
+      <centre><h6>Already have an Account? <Link to="/login">Login</Link></h6></centre>
       <button type="submit"><Link to="/Home" onClick={handleClick} style={{textDecoration: 'none', color:'white'}}>Submit Form</Link></button><br />
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>

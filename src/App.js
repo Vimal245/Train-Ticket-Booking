@@ -6,18 +6,22 @@ import './App.css';
 import Login from './component/Login';
 import Signup from './component/Signup';
 import Home from './component/Home';
+import Landinpage from './component/Landinpage';
 
 const App=()=> {
   return (
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Signup />} ></Route>
+        <Route path="/" element={<Landinpage />} ></Route>
+        <Route path="/login" element={<Signup />} ></Route>
         <Route path="/Signup" element={<Login />} ></Route>
         <Route path="/Home" element={<Home />} ></Route>
       </Routes>
       </BrowserRouter>
+      
     </div>
+    
   );
 }
 
