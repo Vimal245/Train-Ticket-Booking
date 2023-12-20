@@ -11,10 +11,34 @@ import FormLabel from '@mui/material/FormLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Chip from '@mui/material/Chip';
 
+// import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import Slide from "@mui/material/Slide";
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="down" ref={ref} {...props} />;
+});
+
+
+
 export default function Home() {
 
   const handleClick = () => {
     console.info("You clicked the Chip.");
+  };
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
 
@@ -22,14 +46,37 @@ export default function Home() {
     <div>
         <div class="topnav">
     
-    <a href="#news">Help</a>
-    <a href="#contact">Contact us</a>
-    <a href="#about">About</a>
+    <a href="#news" onClick={handleClickOpen}>Wallet</a>
+    <a href="#contact">Trips</a>
+    <a href="#about">Support</a>
     <a class="active" href="#home">Home</a>
     <div class="topnav1">
       <b>Train Ticket Booking System</b>
     </div>
     </div>
+
+    <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-describedby="alert-dialog-slide-description"
+      >
+        <DialogTitle>{"No cash in Wallet"}</DialogTitle>
+        <DialogContent>
+          <DialogContentText
+            id="alert-dialog-slide-description"
+            style={{ color: "red" }}
+          >
+            ₹ 0
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} style={{color:'#4caf50'}}>Add Cash</Button>
+          <Button onClick={handleClose} style={{color:'#4caf50'}}>Cancel</Button>
+        </DialogActions>
+      </Dialog>
+
     <div class="hello1">
         <img src='https://www.confirmtkt.com/img/icons/ic-search-from-desktop.svg'></img>
         <TextField

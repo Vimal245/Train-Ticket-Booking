@@ -7,6 +7,7 @@ import Login from './component/Login';
 import Signup from './component/Signup';
 import Home from './component/Home';
 import Landinpage from './component/Landinpage';
+import Footer from './component/Footer';
 
 const App=()=> {
   return (
@@ -19,7 +20,7 @@ const App=()=> {
         <Route path="/Home" element={<Home />} ></Route>
       </Routes>
       </BrowserRouter>
-      
+      <Footer></Footer>
     </div>
     
   );
