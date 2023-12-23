@@ -176,26 +176,25 @@ export default function Home() {
         </div>
     </div>
     <div class="section_2">
-        <div class="v13_2"></div><span class="v13_3">12507 - ARONAI EXPRESS</span><span class="v13_4">01:35 CBE --07h
-            35m-- 09:10 PER</span>
+        <div class="v13_2"></div><span class="v13_3">12680 - MAS INTERCITY</span><span class="v13_4">06:20 CBE --07h
+            30m-- 13:50 MAS</span>
         <div class="v13_16">
             <div class="v13_5"></div><span class="v13_12">SL</span><span class="v13_13">₹ 325</span><span
-                class="v13_14">PQWL91/WL83</span><span class="v13_15">Available</span>
+                class="v13_14">ABWL51/WL83</span><span class="v13_15">Available</span>
         </div>
         <div class="v13_17">
             <div class="v13_18"></div><span class="v13_19">3A</span><span class="v13_20">₹ 835</span><span
-                class="v13_21">PQWL55/WL44</span><span class="v13_22">81% Chance</span>
+                class="v13_21">ABWL54/WL39</span><span class="v13_22">86% Chance</span>
         </div>
         <div class="v13_23">
             <div class="v13_24"></div><span class="v13_25">2A</span><span class="v13_26">₹ 1170</span><span
-                class="v13_27">PQWL9/WL7</span><span class="v13_28">86% Chance</span>
+                class="v13_27">ABWL1/WL3</span><span class="v13_28">69% Chance</span>
         </div>
         <div class="v13_29">
             <div class="v13_30"></div><span class="v13_31">1A</span><span class="v13_32">₹ 2060</span><span
-                class="v13_33">PQWL78/WL2</span><span class="v13_34">65% Chance</span>
+                class="v13_33">ABWL69/WL54</span><span class="v13_34">81% Chance</span>
         </div>
     </div>
-
     </div>
   )
 }

@@ -21,14 +21,14 @@
   }
   
   .landnav a:hover {
-    background-color: #0f6f12;
+    background-color: #4caf50;
     color: rgb(255, 255, 255);
   }
   
-  .landnav a.active {
+  /* .landnav a.active {
     background-color:#4caf50;
     color: white;
-  }
+  } */
 
   .headd {
     color: #ffffff;
