@@ -18,6 +18,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
+import Footer from './Footer';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
@@ -195,6 +196,7 @@ export default function Home() {
                 class="v13_33">ABWL69/WL54</span><span class="v13_34">81% Chance</span>
         </div>
     </div>
+    <Footer></Footer>
     </div>
   )
 }
