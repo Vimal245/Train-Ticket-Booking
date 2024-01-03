@@ -159,7 +159,7 @@ export default function Home() {
     <div class="v13_35">
         <div class="v13_2"></div><span class="v13_3">12507 - ARONAI EXPRESS</span><span class="v13_4">01:35 CBE --07h
             35m-- 09:10 PER</span>
-        <div class="v13_16">
+        <div class="v13_16"><a href="#"></a>
             <div class="v13_5"></div><span class="v13_12">SL</span><span class="v13_13">₹ 325</span><span
                 class="v13_14">PQWL91/WL83</span><span class="v13_15">Available</span>
         </div>
