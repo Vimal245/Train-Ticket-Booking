@@ -8,7 +8,7 @@ import Signup from './component/Signup';
 import Home from './component/Home';
 import Landinpage from './component/Landinpage';
 // import Socialmedia from './component/Socialmedia';
-import Check from './component/Check';
+// import Check from './component/Check';
 
 
 const App=()=> {
